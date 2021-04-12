@@ -1,0 +1,112 @@
+
+
+/*counsellorhub styling*/
+.logoname{
+	background-color: orange;
+	text-align: center;
+	font-family: "Lucida Handwriting", cursive;
+}
+
+/*it does nothing but let it stay here*/
+/*.container {
+  display: inline-block;
+  cursor: pointer;
+}*/
+
+
+/*it also do nothing and let it stay here*/
+.navbar{
+	position: sticky;
+	background: transparent;
+	overflow: visible;
+
+}
+
+/*it provides proper structure*/
+.navigation{
+	position: absolute;
+	justify-content: space-around;
+	display: inline;
+}
+
+/*list styling*/
+ul {
+  list-style-type: none;
+  margin: 4px 0px 0px 14px;
+  padding: 5px 9px;
+  overflow: hidden;
+  display: inline-block;
+}
+/*list items styling*/
+li {
+  float: left;
+  font-family: sans-serif;
+}
+/*list items link styling*/
+li a {
+  	display: inline-block;
+  	padding: 8px;
+  	background-color: white;
+}
+
+/*All 3 bars styling*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 10px;
+  transition: 0.4s;
+}
+/*when toggle, bar 1 and bar 3 rotate and bar 2 disappear*/
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*it helps in hovering though it has nothing helpful inside yet*/
+#dropdown:hover{
+	background: transparent;
+	z-index: 1;
+
+}
+/*login class take care of bg and border*/
+.login{
+	display: inline-block;
+	float: right;
+	margin: -2px 200px;
+
+	/*padding: 0px 0px 0px 500px;*/
+}
+
+/*button take care of text, styling, margins n ol*/
+.btn{
+	background-color: white;
+  	border: solid;
+  	color: black;
+  padding: 7px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 14px;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+
+}
+
+/*it is the bg image(unsplash wali)*/
+html { 
+  background: url(goal.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
